@@ -14,7 +14,9 @@ contract simpleStorage{
     //now lets write the functions types we need which are set and get
 
     function set(uint x) public {
-        storeData = x;
+        storeData = x * 5;  // to get times value of your return add this times symble * 
+                            //and the number of times you want this code to reture.
+                            //for example> storeData = x * 5; instead of storeData = x ;
     }
 
     function get() public view returns (uint) {
