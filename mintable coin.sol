@@ -6,8 +6,13 @@ contract coin {
 
     event sent(address from, address to, uint amount);
 
+    string private _symbol;
+    string private _name;
+
     constructor() {
         minter = msg.sender;
+        _name = "TOK NME";
+        _symbol = "TOL";
     }
 
     function mint( address receiver, uint amount) public {
